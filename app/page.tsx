@@ -6,7 +6,7 @@ export default async function Home() {
   
   const allPlaces = await fetchParkingPlace()
   const isDataEmpty = !Array.isArray(allPlaces) || allPlaces.length < 1 || !allPlaces
-  
+
   return (
     <main className="overflow-hidden">
       <Hero />
